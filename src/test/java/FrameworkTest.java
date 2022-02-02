@@ -6,6 +6,6 @@ public class FrameworkTest {
 
     @Test
     public void should_successfully_execute_common_unit_test() {
-        assertTrue(false);
+        assertTrue(true);
     }
 }
