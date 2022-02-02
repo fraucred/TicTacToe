@@ -11,4 +11,8 @@ public class Field {
     public boolean isTaken() {
         return takenByPlayer;
     }
+
+    public void takeOver() {
+        takenByPlayer = true;
+    }
 }
