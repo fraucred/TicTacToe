@@ -11,3 +11,9 @@ In random order
     a game has nine fields in a 3x3 grid
     a game is over when all fields in a column are taken by a player
     a player can take a field if not already taken
+
+Personal notes : which rules are present ?
+* GAME has nine fields
+* GAME can be over or not over
+* there are two PLAYERS in a GAME
+* FIELD can be taken or not
