@@ -1,5 +1,7 @@
 package ticTacToe;
 
+import ticTacToe.factory.FieldFactory;
+
 import java.util.List;
 
 public class Game {
@@ -24,6 +26,6 @@ public class Game {
     }
 
     private List<Field> newGameGrid() {
-        return null;
+        return FieldFactory.buildNineFields();
     }
 }
