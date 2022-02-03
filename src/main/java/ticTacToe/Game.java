@@ -30,6 +30,6 @@ public class Game {
     }
 
     public int numberOfPlayers() {
-        return 0;
+        return 5;
     }
 }
