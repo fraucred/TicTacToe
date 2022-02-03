@@ -40,4 +40,11 @@ public class GameTest {
 
         assertTrue(game.numberOfPlayers() <= 2);
     }
+
+    @Test
+    public void tic_tac_toe_game_number_of_players_should_be_2() {
+        Game game = new Game();
+
+        assertEquals(2, game.numberOfPlayers());
+    }
 }
