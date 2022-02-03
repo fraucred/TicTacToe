@@ -28,4 +28,8 @@ public class Game {
     private List<Field> newGameGrid() {
         return FieldFactory.buildNineFields();
     }
+
+    public int numberOfPlayers() {
+        return 0;
+    }
 }

@@ -26,4 +26,11 @@ public class GameTest {
 
         assertEquals(9, game.numberOfFields());
     }
+
+    @Test
+    public void tic_tac_toe_game_should_not_have_less_than_two_players() {
+        Game game = new Game();
+
+        assertTrue(game.numberOfPlayers() >= 2);
+    }
 }
