@@ -16,4 +16,4 @@ Personal notes : which rules are present ?
 * GAME has nine fields
 * GAME can be over or not over
 * there are two PLAYERS in a GAME
-* FIELD can be taken or not
+* FIELDS can be taken or not

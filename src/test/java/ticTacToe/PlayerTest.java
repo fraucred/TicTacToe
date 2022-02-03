@@ -3,6 +3,7 @@ package ticTacToe;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
+import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 public class PlayerTest {
@@ -14,6 +15,15 @@ public class PlayerTest {
         player.select(field);
 
         assertTrue(field.isTaken());
+    }
+
+    @Test
+    public void a_player_should_not_be_active() {
+        Player player = new Player();
+
+        boolean isPlayerActive = player.isActive();
+
+        assertFalse(isPlayerActive);
     }
 
     @Test
