@@ -17,3 +17,5 @@ Personal notes : which rules are present ?
 * GAME can be over or not over
 * there are two PLAYERS in a GAME
 * FIELDS can be taken or not
+* PLAYER is not active until the other PLAYER turn taking fields is over
+* 

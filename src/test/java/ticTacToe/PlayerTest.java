@@ -27,6 +27,15 @@ public class PlayerTest {
     }
 
     @Test
+    public void a_player_should_be_active_when_taking_fields() {
+        Player player = new Player();
+
+        boolean isPlayerActive = player.isActive();
+
+        assertTrue(isPlayerActive);
+    }
+
+    @Test
     @Disabled
     public void a_player_should_not_take_a_field_if_already_taken_by_another_player() { // TODO deal with this complex use case
         Player player = new Player();
