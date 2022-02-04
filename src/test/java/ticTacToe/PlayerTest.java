@@ -18,7 +18,7 @@ public class PlayerTest {
     }
 
     @Test
-    public void a_player_should_not_be_active() {
+    public void a_player_should_not_be_active_when_waiting_for_its_turn() {
         Player player = new Player();
 
         boolean isPlayerActive = player.isActive();

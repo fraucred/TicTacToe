@@ -6,6 +6,6 @@ public class Player {
     }
 
     public boolean isActive() {
-        return true;
+        return false;
     }
 }
