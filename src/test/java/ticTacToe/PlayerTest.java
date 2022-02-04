@@ -28,7 +28,7 @@ public class PlayerTest {
 
     @Test
     public void a_player_should_be_active_when_taking_fields() {
-        Player player = new Player();
+        Player player = new Player(true);
 
         boolean isPlayerActive = player.isActive();
 
