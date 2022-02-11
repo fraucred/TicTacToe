@@ -1,10 +1,8 @@
 package ticTacToe;
 
-import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.assertFalse;
-import static org.junit.jupiter.api.Assertions.assertTrue;
+import static org.junit.jupiter.api.Assertions.*;
 
 public class PlayerTest {
     @Test
@@ -36,13 +34,10 @@ public class PlayerTest {
     }
 
     @Test
-    @Disabled
-    public void a_player_should_not_take_a_field_if_already_taken_by_another_player() { // TODO deal with this complex use case
+    public void a_player_should_not_take_a_field_if_already_taken_by_another_player() {
         Player player = new Player();
         Field field = new Field(true);
 
-        player.select(field);
-
-        assertTrue(field.isTaken());
+        assertThrows(IllegalStateException.class, () -> player.select(field));
     }
 }

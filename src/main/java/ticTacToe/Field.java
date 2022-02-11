@@ -13,6 +13,9 @@ public class Field {
     }
 
     public void takeOver() {
+        if (takenByPlayer) {
+            throw new IllegalStateException("Field already taken by player");
+        }
         takenByPlayer = true;
     }
 }

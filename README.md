@@ -18,4 +18,6 @@ Personal notes : which rules are present ?
 * there are two PLAYERS in a GAME
 * FIELDS can be taken or not
 * PLAYER is not active until the other PLAYER turn taking fields is over
-* 
+* PLAYER is active until taking a field not already taken by another PLAYER
+* PLAYER can take a field if not already taken
+* PLAYER can not take a field if already taken
