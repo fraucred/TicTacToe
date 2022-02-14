@@ -42,4 +42,16 @@ public class GameOverTest {
 
         assertTrue(game.isOver());
     }
+
+    @Test
+    public void game_is_over_when_all_fields_in_a_column_index_1_are_taken() {
+        Game game = new Game();
+        Player player = new Player(true);
+
+        player.select(game, 1, 0);
+        player.select(game, 1, 1);
+        player.select(game, 1, 2);
+
+        assertTrue(game.isOver());
+    }
 }
