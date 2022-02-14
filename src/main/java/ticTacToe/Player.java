@@ -22,6 +22,8 @@ public class Player {
     public void select(Game game, int column, int row) {
         if (column == 0) {
             game.stopGame();
+        } else if (column == 2) {
+            game.stopGame();
         } else {
             game.checkIsOver();
         }
