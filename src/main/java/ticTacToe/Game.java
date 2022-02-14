@@ -40,4 +40,11 @@ public class Game {
     private List<Field> newGameGrid() {
         return FieldFactory.buildNineFields();
     }
+
+    public void checkIsOver(int column, int row) {
+        fields.stream()
+        isOver = fields.stream()
+                .filter(field -> field.sameColumn(column))
+                .allMatch(Field::isTaken);
+    }
 }

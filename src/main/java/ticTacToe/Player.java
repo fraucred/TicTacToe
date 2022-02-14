@@ -25,7 +25,7 @@ public class Player {
         } else if (column == 2) {
             game.stopGame();
         } else {
-            game.checkIsOver();
+            game.checkIsOver(column, row);
         }
     }
 }
