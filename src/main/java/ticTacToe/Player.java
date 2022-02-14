@@ -20,6 +20,10 @@ public class Player {
     }
 
     public void select(Game game, int column, int row) {
-        game.stopGame();
+        if (column == 0) {
+            game.stopGame();
+        } else {
+            game.checkIsOver();
+        }
     }
 }

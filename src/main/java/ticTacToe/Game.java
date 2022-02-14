@@ -33,6 +33,10 @@ public class Game {
         isOver = true;
     }
 
+    public void checkIsOver() {
+        isOver = false;
+    }
+
     private List<Field> newGameGrid() {
         return FieldFactory.buildNineFields();
     }
