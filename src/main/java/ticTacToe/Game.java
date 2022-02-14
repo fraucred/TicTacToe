@@ -25,11 +25,15 @@ public class Game {
         return fields.size();
     }
 
-    private List<Field> newGameGrid() {
-        return FieldFactory.buildNineFields();
-    }
-
     public int numberOfPlayers() {
         return 2;
+    }
+
+    public void stopGame() {
+        isOver = true;
+    }
+
+    private List<Field> newGameGrid() {
+        return FieldFactory.buildNineFields();
     }
 }

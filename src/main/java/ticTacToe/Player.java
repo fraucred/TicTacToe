@@ -18,4 +18,8 @@ public class Player {
     public boolean isActive() {
         return isActive;
     }
+
+    public void select(Game game, int column, int row) {
+        game.stopGame();
+    }
 }
